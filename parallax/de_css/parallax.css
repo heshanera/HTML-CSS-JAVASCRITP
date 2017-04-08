@@ -1,0 +1,16 @@
+.parallax-container{
+  width:100%;
+  min-height:400px;
+}
+
+.parallax-img-box{
+  min-height:400px !important;
+  padding: 40px 20px 20px 40px;
+  background-size: cover;
+}
+
+
+.parallax-content-box{
+  color:#fff;
+  font-size: 18px;
+}

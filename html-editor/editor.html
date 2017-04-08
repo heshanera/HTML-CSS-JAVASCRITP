@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="de_css/font-awesome/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="de_css/editor.css">
+
+  <script src="de_js/editor.js"></script>
+
+</head>
+<body>
+
+
+<div class="alert alert-success hide-saved-alert fade in">
+  <strong>Success!</strong> Changes has been saved.
+</div>
+
+<div class = "container edit-this content">
+  <h1> This is Header 1</h1>
+  <p>
+    This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph
+    This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph 
+    This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph 
+    This is a paragraph This is a paragraph <b> This is a bold text </b> This is a paragraph This is a paragraph
+  </p>
+  <h3> This is Header 3</h3>
+  <p>
+    This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph
+    This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph 
+    This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph This is a paragraph 
+    This is a paragraph This is a paragraph <b> This is a bold text </b> This is a paragraph This is a paragraph
+  </p>
+
+</div>
+
+<div class="container editor-btn-container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-warning btn-lg edit-button" data-toggle="modal" data-target="#myModal">Edit</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Editor</h4>
+        </div>
+        <div class="modal-body">
+        
+          <div class = "row option-bar">
+
+            <select class = "drop-down-option">
+              <option value="" disabled selected hidden>Header</option>
+              <option class = "header1" value="header1">Header 1</option>
+              <option class = "header2" value="header2">Header 2</option>
+              <option class = "header3" value="header3">Header 3</option>
+              <option class = "header4" value="header4">Header 4</option>
+              <option class = "header5" value="header5">Header 5</option>
+              <option class = "header6" value="header6">Header 6</option>
+            </select>
+
+            <div class ="breaker"></div>
+
+            <button class = "option bold" data-toggle="tooltip" data-placement="top" title="Bold"> B </button>
+            <button class = "option italic" data-toggle="tooltip" data-placement="top" title="Italic"> I </button>
+            <button class = "option underline" data-toggle="tooltip" data-placement="top" title="Underline"> U </button>
+            
+            <div class ="breaker"></div>
+
+            <button class = "option justify" data-toggle="tooltip" data-placement="top" title="Justify">
+              <i class="fa fa-align-justify" aria-hidden="true"></i>
+            </button>
+            <button class = "option align-left" data-toggle="tooltip" data-placement="top" title="Align Left">
+              <i class="fa fa-align-left" aria-hidden="true"></i>
+            </button>
+            <button class = "option align-center" data-toggle="tooltip" data-placement="top" title="Align Center">
+              <i class="fa fa-align-center" aria-hidden="true"></i>
+            </button>
+            <button class = "option align-right" data-toggle="tooltip" data-placement="top" title="Align Right">
+              <i class="fa fa-align-right" aria-hidden="true"></i>
+            </button>
+
+            <div class ="breaker"></div>
+
+            <button class = "option ulist" data-toggle="tooltip" data-placement="top" title="Unordered List">
+              <i class="fa fa-list-ul" aria-hidden="true"></i>
+            </button>
+          
+          </div>    
+
+          <div contenteditable="true" class="form-control editor-textarea"  id="editor-text"> </div>            
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id = "save-btn" data-dismiss="modal">Save</button> 
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
